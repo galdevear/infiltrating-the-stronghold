@@ -1,0 +1,9 @@
+{
+    "entity": "this",
+    "condition": "entity_properties",
+    "predicate": {
+        "vehicle": {
+            "type": "endermite"
+        }
+    }
+}
