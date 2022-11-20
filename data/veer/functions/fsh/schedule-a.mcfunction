@@ -18,7 +18,7 @@ execute as @s[type=#veer:fsh/in_block_projectiles,tag=!global.ignore.pos, tag=ve
 # Also includes silverfish queen endermite spawning. (any silverfish in stronghold)
 execute as @s[type=silverfish, tag=veer.fsh.entity.new, tag=!global.ignore.pos] run function veer:fsh/silverfish/init
 
-#> Mob Spawning
+#> Watcher Spawning
 # Swap some new spawns with a pair of watchers
 execute as @s[type=#veer:fsh/watcher_pair/replaceable, tag=veer.fsh.entity.new, tag=!global.ignore.pos, predicate=veer:fsh/in_stronghold] run function veer:fsh/watcher_pair/init_replaceable
 
@@ -26,7 +26,7 @@ execute as @s[type=#veer:fsh/watcher_pair/replaceable, tag=veer.fsh.entity.new, 
 # Player detection for sculk watcher (stealth mechanic)
 execute as @s[type=snowball,tag=veer.fsh.sculk_watcher] run function veer:fsh/sculk_watcher/detect
 
-#> Potion effect tears attack
+#> Potion effect tears
 #   Obsidian Watcher
 execute as @s[type=ender_pearl,tag=veer.fsh.obsidian_watcher, predicate=veer:fsh/watcher_pair/can_cry] run function veer:fsh/obsidian_watcher/attack
 #   End Watcher
