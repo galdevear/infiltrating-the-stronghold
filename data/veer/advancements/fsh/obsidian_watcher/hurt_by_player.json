@@ -1,0 +1,21 @@
+{
+   "criteria": {
+       "hurt_by_player":{
+           "trigger": "player_hurt_entity",
+           "conditions": {
+               "entity": {
+                   "type": "vex",
+                   "distance": {
+                       "absolute": {
+                           "max": 15
+                       }
+                   },
+                   "nbt": "{Tags:[\"veer.fsh.obsidian_watcher\"]}"
+               }
+           }
+       }
+   },
+   "rewards": {
+       "function": "veer:fsh/obsidian_watcher/hurt_by_player"
+   }
+}
