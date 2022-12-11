@@ -1,7 +1,7 @@
 {
     "display": {
         "title": "Infiltrating the Stronghold",
-        "description": "Strongholds are now stealth dungeons",
+        "description": "Strongholds as stealth dungeons",
         "icon": {
             "item": "minecraft:ender_eye"
         },

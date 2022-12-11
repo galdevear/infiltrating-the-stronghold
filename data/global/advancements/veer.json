@@ -1,18 +1,18 @@
 {
     "display": {
-        "title": "Galdeveer",
-        "description": "",
-        "icon": {
-            "item": "minecraft:player_head",
-            "nbt": "{SkullOwner: \"Galdeveer\"}"
-        },
-        "show_toast": false,
-        "announce_to_chat": false
+      "title": "Galdeveer",
+      "description": "",
+      "icon": {
+        "item": "minecraft:player_head",
+        "nbt": "{SkullOwner:{Id:[I;289983307,1731481586,-1776682958,666372356],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWFjZTZjMjdjM2U5NzIzYWFjZDg4Yjg3NTk5NWU2MTI0NTUyYmZiYmQ4MGQwZTRhNTgzMmJlMzE1ZWI1MDU3NSJ9fX0=\"}]}}}"
+      },
+      "show_toast": false,
+      "announce_to_chat": false
     },
     "parent": "global:root",
     "criteria": {
-        "trigger": {
-            "trigger": "minecraft:tick"
-        }
+      "trigger": {
+        "trigger": "minecraft:tick"
+      }
     }
-}
+  }
