@@ -1,8 +1,6 @@
 ##
- # init_sculk_watcher_replaceable.mcfunction
- # Version 1
- #alias entity callerPrereq @s[tag=!global.ignore.pos, tag=!global.ignore]
- # Created by Galdeveer.
+ # Date: 12/20/22
+ # Created by Galdeveer
 ##
 
 # Summon sculk watcher
