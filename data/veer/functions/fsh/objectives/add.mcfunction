@@ -11,13 +11,11 @@
 #declare objective veer.fsh.sSw
 #declare objective veer.fsh.sculkBattlecry
 #declare objective veerFsh.ibpTimer maxes out at 4
-#declare objective veerFsh.bcCldown
 #declare objective veerFsh.gloTimer
 #declare objective veer.fsh.passenger.bobber
 
 
 scoreboard objectives add veerFsh.gloTimer dummy
-scoreboard objectives add veerFsh.bcCldown dummy
 scoreboard objectives add veerFsh.ibpTimer dummy "In-Block Projectile Timer"
 scoreboard objectives add veerFsh.sbTimer dummy "Silverfish Battlecryer Timer"
 scoreboard objectives add veer.fsh.swc dummy "Ray tracing for Sculk Watcher Cry"

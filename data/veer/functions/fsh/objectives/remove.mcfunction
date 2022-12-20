@@ -12,5 +12,4 @@ scoreboard objectives remove veer.fsh.ssb.ay
 scoreboard objectives remove veer.fsh.sSw
 scoreboard objectives remove veer.fsh.sculkBattlecry
 scoreboard objectives remove veerFsh.ibpTimer
-scoreboard objectives remove veerFsh.bcCldown
 scoreboard objectives remove veer.fsh.passenger.bobber

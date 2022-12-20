@@ -5,7 +5,6 @@
 ## 
 
 #Initialize scoreboard stuff
-scoreboard players set @s veerFsh.bcCldown 100
 scoreboard players set @s veer.fsh.sculkBattlecry 100
 
 #untag as newly summoned
