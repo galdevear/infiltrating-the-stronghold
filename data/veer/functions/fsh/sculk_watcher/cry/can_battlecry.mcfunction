@@ -1,5 +1,5 @@
 ##
- # battlecry.mcfunction
+ # Date: 11/29/22
  # 
  # Created by Galdeveer.
 ##
