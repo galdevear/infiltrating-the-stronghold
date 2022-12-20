@@ -5,6 +5,7 @@
 ## 
 
 #Initialize scoreboard stuff
+# Large number used so it doesn't need to be updated
 scoreboard players set @s veer.fsh.sculkBattlecry 100
 
 #untag as newly summoned

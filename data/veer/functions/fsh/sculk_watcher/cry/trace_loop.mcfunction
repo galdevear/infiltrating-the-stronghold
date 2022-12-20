@@ -16,7 +16,6 @@ scoreboard players add $i veer.fsh.swc 1
 
 ## Out of Bounds
 execute if score $i veer.fsh.swc matches 41.. run scoreboard players set $seesEntity veer.fsh.swc -1
-# execute if score $i veer.fsh.swc matches 9.. anchored feet at @s positioned ~ ~ ~ as @s[predicate=veer:fsh/is_stealthy] run scoreboard players set $seesEntity veer.fsh.swc -1
 
 ## Detect wall
 # Fail if the block is not seethrough. Checks if atleast 1/5 points are seethrough in a 1x1 grid (orthogonal to sightline)
@@ -31,7 +30,11 @@ execute if score $seesEntity veer.fsh.swc matches 0 unless block ^ ^0.49 ^ #veer
 
 ## Success
 # Detect entity at location
-execute positioned ~ ~-0.8 ~ if entity @s[distance=..1] run scoreboard players set $seesEntity veer.fsh.swc 1
+execute positioned ~ ~-0.8 ~ if entity @s[distance=..1] run scoreboard players add $seesEntity veer.fsh.swc 1
+
+## Startle Filter
+execute if score $seesEntity veer.fsh.swc matches 1 if entity @s[type=#veer:fsh/sculk_watcher/cry/startle] unless score @s veer.fsh.swc.startleDuration matches 3.. run scoreboard players add @s veer.fsh.swc.startleDuration 1
+execute if score $seesEntity veer.fsh.swc matches 1 if entity @s[type=#veer:fsh/sculk_watcher/cry/startle] if score @s veer.fsh.swc.startleDuration matches 3.. run scoreboard players set $seesEntity veer.fsh.swc -1
 
 ## Recurse
 execute if score $seesEntity veer.fsh.swc matches 0 positioned ^ ^ ^0.5 run function veer:fsh/sculk_watcher/cry/trace_loop

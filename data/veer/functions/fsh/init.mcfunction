@@ -1,11 +1,8 @@
 ##
- # reset.mcfunction
- # Version 1 
+ # Date: 12/20/22 
  # Redo scheduled functions, readd objectives, etc.
  # Created by Galdeveer.
 ##
-
-#TODO: Decide if remove_objectives should be ran here before add objectives (For updating purposes.)
 
 # Reset scheduled functions
 schedule clear veer:fsh/schedule

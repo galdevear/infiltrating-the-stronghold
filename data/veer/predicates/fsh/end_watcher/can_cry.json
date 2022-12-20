@@ -1,0 +1,76 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+          "condition": "inverted",
+            "term": {
+                "condition": "alternative",
+                "terms": [
+                    {
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "vehicle": {
+                                    "type": "vex",
+                                    "targeted_entity": {}
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "condition": "alternative",
+                        "terms": [
+                            {
+                                "condition": "entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "vehicle": {
+                                        "type": "vex",
+                                        "targeted_entity": {
+                                            "type_specific": {
+                                                "type": "player",
+                                                "looking_at": {
+                                                    "type":"vex",
+                                                    "passenger": {"type":"snowball"}
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "vehicle": {
+                                        "type": "vex",
+                                        "targeted_entity": {
+                                            "targeted_entity": {
+                                                "type": "vex",
+                                                "passenger": {"type": "snowball"}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "condition": "inverted",
+            "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "vehicle":{
+                        "type":"vex"
+                    }
+                }
+            }
+        }
+    ]
+}

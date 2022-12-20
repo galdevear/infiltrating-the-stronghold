@@ -4,5 +4,5 @@
  # Created by Galdeveer.
 ##
 
-execute if score @s veerFsh.gloTimer matches -1 run data modify entity @s Glowing set value 0b
-scoreboard players remove @s veerFsh.gloTimer 1
+execute if score @s veer.fsh.gloTimer matches -1 run data modify entity @s Glowing set value 0b
+scoreboard players remove @s veer.fsh.gloTimer 1

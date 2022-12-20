@@ -8,10 +8,10 @@
 # Returns seesEntity
 execute at @s positioned ~ ~0.2 ~ run function veer:fsh/sculk_watcher/cry/look_for_entity
 
-# Makes sure there's a cooldown between battlecrys and the sculk watcher must see you multiple times consecutitvely in order to trigger.
+# 
 
-# Increment till 7
-execute if score @s veer.fsh.sculkBattlecry matches ..7 run scoreboard players add @s veer.fsh.sculkBattlecry 1
+# Increment ending at 7
+execute if score @s veer.fsh.sculkBattlecry matches ..6 run scoreboard players add @s veer.fsh.sculkBattlecry 1
 # If cooldown..max then tears = 0
 execute if score @s veer.fsh.sculkBattlecry matches 2..6 if score $seesEntity veer.fsh.swc matches 1 run scoreboard players set @s veer.fsh.sculkBattlecry 0
 # If after max then tears = -2

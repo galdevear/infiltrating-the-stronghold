@@ -2,7 +2,6 @@
     "condition": "entity_properties",
     "entity": "this",
     "predicate": {
-        "type": "#veer:fsh/in_block_projectiles",
-        "nbt": "{inGround:1b}"
+        "flags": {"is_sneaking": true}
     }
 }
