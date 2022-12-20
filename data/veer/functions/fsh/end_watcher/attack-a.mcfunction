@@ -1,13 +1,9 @@
 ##
- # attack.mcfunction
- # 
  #
  # Created by Galdeveer.
 ##
 
-# TODO: Change drip to occur constantly since it reveals location while in ceiling.
-
-# Player is seperated since checking for not spectator will actually evaluate wierdly for mobs since they don't have a gamemode
+# Player is checked seperately because checking for "not spectator" will evaluate wierdly for mobs. This is because they don't have a gamemode.
 execute as @s[type=player,gamemode=!spectator] run effect give @s glowing 15 0
 
 # TODO: adjust attack range
