@@ -12,5 +12,4 @@ advancement revoke @s only veer:fsh/end_watcher/hurt_by_player
 # Rather than detect which one died, it just picks the first one it detects that's close enough.
 # Limit is used to ensure the sound only plays once. It is necessary since its imprecise
 
-# TODO: Change to make more intuitive for death players.
 execute at @e[type=ender_pearl, tag=veer.fsh.end_watcher, distance=..15, limit=1] run playsound minecraft:block.sculk.hit hostile @s ~ ~ ~ 0.5 1.6

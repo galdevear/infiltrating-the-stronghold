@@ -1,6 +1,5 @@
 ##
- # fix_glowing.mcfunction
- # Version 1
+ # end_glowing.mcfunction
  #
  # Created by Galdeveer.
 ##
