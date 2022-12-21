@@ -5,7 +5,7 @@
  # Created by Galdeveer.
 ##
 
-scoreboard objectives remove veer.fsh.gloTimer
+scoreboard objectives remove veer.fsh.glowTimer
 scoreboard objectives remove veer.fsh.sbTimer
 scoreboard objectives remove veer.fsh.swc
 scoreboard objectives remove veer.fsh.ssb.ay
