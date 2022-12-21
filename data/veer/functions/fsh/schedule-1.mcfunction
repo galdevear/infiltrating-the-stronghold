@@ -29,7 +29,7 @@ execute if entity @s[type=ender_pearl,tag=veer.fsh.obsidian_watcher] run functio
 execute if entity @s[type=ender_pearl,tag=veer.fsh.end_watcher] run function veer:fsh/end_watcher/attack
 
 #> Removing glowing from 2dproj
-execute if entity @s[type=#veer:fsh/fix_glowing/vehicles, tag=veer.fsh.fix_glowing.vehicle] run function veer:fsh/fix_glowing/detect
+execute if entity @s[type=#veer:fsh/fix_glowing/passengers, tag=veer.fsh.fix_glowing.passenger] if score @s veer.fsh.glowTimer matches 0.. run function veer:fsh/fix_glowing/decrement
 
 
 #TODO: Change mostly  to bind vex
