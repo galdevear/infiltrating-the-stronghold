@@ -5,14 +5,7 @@
  # Created by Galdeveer.
 ##
 
-#TODO: Consider changing it so the falling block gets placed, but the silverfish doesn't spawn. Or the block simply isn't infested. Might be overdoing it by having it be infested.
-
-# Summon endermites to supplement the silverfish (tagged so not to cause looping)
-# TODO: Write down at what tick lifetime overflows.
-# only difference is lifetick.
-# Previously Tested Knockback value 0.01
-# Changed to 0.05
-execute at @s if predicate veer:fsh/in_stronghold run function veer:fsh/silverfish/init-1
+execute at @s if predicate veer:fsh/in_stronghold run function veer:fsh/silverfish/summon_swarm
 
 # Shrink silverfish detection range so they favor running away.
 # (silverfish ai is much more passively active than normal mobs)

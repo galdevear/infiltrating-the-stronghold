@@ -9,9 +9,7 @@
               "entity": "this",
               "predicate": {
                 "type": "minecraft:falling_block",
-                "vehicle": {
-                  "type": "minecraft:endermite"
-                }
+                "nbt": "{Tags:[\"veer.fsh.hooked_shell\"]}"
               }
             }
           ]

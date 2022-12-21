@@ -35,7 +35,7 @@ data modify storage veer.fsh.sf.summon_battlecryer yPos set from entity @s Pos[1
 # KNOWN ERROR: When your too high up, the lower places aren't loaded and you can't tp the silverfish back up.
 # WHY ITS OK: Suffocation damage won't mess things up
 # TODO: Maybe swap one bug for another and allow wierd behavior up high instead of no behavior
-execute at @s run summon silverfish ~ 0 ~ {Silent:1b,NoGravity:1b,Tags:["global.ignore","global.ignore.pos","veer.fsh.silverfish","veer.fsh.silverfish.battlecryer","veer.fsh.silverfish.battlecryer.new", "veer.fsh.silverfish.battlecryer.retToY"],ActiveEffects:[{Id:7b,Amplifier:0b,Duration:1,ShowParticles:0b},{Id:14b,Amplifier:0b,Duration:2147483647,ShowParticles:0b}],Attributes:[{Name:"generic.armor",Base:100.0}]}
+execute at @s run summon silverfish ~ 0 ~ {Silent:1b,NoGravity:1b,Tags:["global.ignore","global.ignore.pos","veer.fsh.silverfish","veer.fsh.silverfish.battlecryer","veer.fsh.silverfish.battlecryer.new", "veer.fsh.silverfish.battlecryer.retToY","veer.fsh"],ActiveEffects:[{Id:7b,Amplifier:0b,Duration:1,ShowParticles:0b},{Id:14b,Amplifier:0b,Duration:2147483647,ShowParticles:0b}],Attributes:[{Name:"generic.armor",Base:100.0}]}
 # initialize Entity onto scoreboard
 execute at @s as @e[type=silverfish,tag=veer.fsh.silverfish.battlecryer.new,limit=1] run function veer:fsh/silverfish/summon_battlecryer-1
 # Sound for battlecry

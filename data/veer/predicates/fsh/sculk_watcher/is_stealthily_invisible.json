@@ -105,22 +105,42 @@
     }
   },
   {
-    "condition": "inverted",
-    "term": {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
-          "type_specific": {
-            "type": "player",
-            "looking_at": {
-              "type": "bat",
+    "condition": "alternative",
+    "terms": [
+      {
+        "condition": "inverted",
+        "term": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "targeted_entity": {
+              "type": "vex",
               "vehicle": {
                 "type": "snowball"
               }
             }
           }
         }
-    }
+      },
+      {
+        "condition": "inverted",
+        "term": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "player",
+              "looking_at": {
+                "type": "bat",
+                "vehicle": {
+                  "type": "snowball"
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
   },
   {
     "condition": "minecraft:entity_properties",

@@ -6,7 +6,6 @@
 
 #> Silverfish Battlecryer
 # Use invis silverfish battlecryer to trigger infested blocks; then, kill it.
-#@public
 #declare tag veer.fsh.silverfish.battlecryer
 
 # Silverfish battlecryer should have started in the void due to the invisible not kicking in for a moment.
@@ -16,7 +15,6 @@ execute as @e[type=silverfish,tag=veer.fsh.silverfish.battlecryer.retToY,scores=
 tag @e[type=silverfish,tag=veer.fsh.silverfish.battlecryer.retToY,scores={veer.fsh.sbTimer = 0}] remove veer.fsh.silverfish.battlecryer.retToY
 
 # Send to void and kill
-# TODO: test delay to see if its off
 execute as @e[type=silverfish, scores={veer.fsh.sbTimer=19..}] run function veer:fsh/util/kill_in_void
 
 # Placement of this line in the code matters
