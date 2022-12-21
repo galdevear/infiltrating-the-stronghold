@@ -22,11 +22,11 @@ execute if score $i veer.fsh.swc matches 41.. run scoreboard players set $seesEn
 execute if score $seesEntity veer.fsh.swc matches 0 unless block ~ ~ ~ #veer:fsh/seethrough run scoreboard players set $seesEntity veer.fsh.swc -1
 execute if score $seesEntity veer.fsh.swc matches 0 unless block ^0.49 ^ ^ #veer:fsh/seethrough unless block ^-0.49 ^ ^ #veer:fsh/seethrough run scoreboard players set $seesEntity veer.fsh.swc -1
 execute if score $seesEntity veer.fsh.swc matches 0 unless block ^ ^0.49 ^ #veer:fsh/seethrough unless block ^ ^-0.49 ^ #veer:fsh/seethrough run scoreboard players set $seesEntity veer.fsh.swc -1
-# particle minecraft:effect ~ ~ ~ 0 0 0 0 1 force @a
-# particle minecraft:effect ^0.49 ^ ^ 0 0 0 0 1 force @a
-# particle minecraft:effect ^-0.49 ^ ^ 0 0 0 0 1 force @a
-# particle minecraft:effect ^ ^0.49 ^ 0 0 0 0 1 force @a
-# particle minecraft:effect ^ ^-0.49 ^ 0 0 0 0 1 force @a
+particle minecraft:effect ~ ~ ~ 0 0 0 0 1 force @a
+particle minecraft:effect ^0.49 ^ ^ 0 0 0 0 1 force @a
+particle minecraft:effect ^-0.49 ^ ^ 0 0 0 0 1 force @a
+particle minecraft:effect ^ ^0.49 ^ 0 0 0 0 1 force @a
+particle minecraft:effect ^ ^-0.49 ^ 0 0 0 0 1 force @a
 
 ## Success
 # Detect entity at location
@@ -40,4 +40,4 @@ execute if score $seesEntity veer.fsh.swc matches 1 if entity @s[type=#veer:fsh/
 execute if score $seesEntity veer.fsh.swc matches 0 positioned ^ ^ ^0.5 run function veer:fsh/sculk_watcher/cry/trace_loop
 
 ## Return
-execute if score $seesEntity veer.fsh.swc matches -1 run scoreboard players set $seesEntity veer.fsh.swc 0
+execute unless score $seesEntity veer.fsh.swc matches 1 run scoreboard players set $seesEntity veer.fsh.swc 0
