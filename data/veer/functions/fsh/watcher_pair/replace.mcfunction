@@ -9,7 +9,7 @@
 #alias vector spawnOffset ~ ~1 ~
 
 # Summon end watcher
-# Note: End watcher is a vex. The upwards offset is to place it one block away from the ground to improve pathfinding.
+# Note: End watcher and Obsidian watchers are vex. The upwards offset is to place it one block away from the ground to improve pathfinding.
 
 #TODO: Change to scoreboard?
 

@@ -5,20 +5,20 @@
  # Created by Galdeveer.
 ##
 
-#declare objective veer.fsh.sbTimer Timer for silverfish battlecryer code
-#declare objective veer.fsh.swc 
-#declare objective veer.fsh.ssb.ay  
-#declare objective veer.fsh.sSw
-#declare objective veer.fsh.sculkBattlecry
-#declare objective veer.fsh.glowTimer
+#declare objective veer.fsh.fix_glowing.glowTimer
+#declare objective veer.fsh.silverish.battlecryer.lifeTimer Timer for silverfish battlecryer code
+#declare objective veer.fsh.sculk_watcher.cry
+#declare objective veer.fsh.sculk_watcher.cry.battlecry
+#declare objective veer.fsh.silverfish.battlecryer.ay
+#declare objective veer.fsh.sculk_watcher.summon.yOffset
 #declare objective veer.fsh.hooked_shell
-#declare objective veer.fsh.swc.startleDuration
+#declare objective veer.fsh.sculk_watcher.cry.startleDuration
 
-scoreboard objectives add veer.fsh.glowTimer dummy
-scoreboard objectives add veer.fsh.sbTimer dummy "Silverfish Battlecryer Timer"
-scoreboard objectives add veer.fsh.swc dummy "Ray tracing for Sculk Watcher Cry"
-scoreboard objectives add veer.fsh.sculkBattlecry dummy "Timer for Sculk Watcher tears"
-scoreboard objectives add veer.fsh.ssb.ay dummy "Actual Y value for silverfish battlecry entity"
-scoreboard objectives add veer.fsh.sSw dummy "Summon Sculk Watcher"
+scoreboard objectives add veer.fsh.fix_glowing.glowTimer dummy
+scoreboard objectives add veer.fsh.silverish.battlecryer.lifeTimer dummy "Silverfish Battlecryer Timer"
+scoreboard objectives add veer.fsh.sculk_watcher.cry dummy "Ray tracing for Sculk Watcher Cry"
+scoreboard objectives add veer.fsh.sculk_watcher.cry.battlecry dummy "Timer for Sculk Watcher tears"
+scoreboard objectives add veer.fsh.silverfish.battlecryer.ay dummy "Actual Y value for silverfish battlecry entity"
+scoreboard objectives add veer.fsh.sculk_watcher.summon.yOffset dummy "Summon Sculk Watcher"
 scoreboard objectives add veer.fsh.hooked_shell dummy
-scoreboard objectives add veer.fsh.swc.startleDuration dummy
+scoreboard objectives add veer.fsh.sculk_watcher.cry.startleDuration dummy

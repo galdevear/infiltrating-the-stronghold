@@ -5,11 +5,11 @@
  # Created by Galdeveer.
 ##
 
-scoreboard objectives remove veer.fsh.glowTimer
-scoreboard objectives remove veer.fsh.sbTimer
-scoreboard objectives remove veer.fsh.swc
-scoreboard objectives remove veer.fsh.ssb.ay
-scoreboard objectives remove veer.fsh.sSw
-scoreboard objectives remove veer.fsh.sculkBattlecry
+scoreboard objectives remove veer.fsh.fix_glowing.glowTimer
+scoreboard objectives remove veer.fsh.silverish.battlecryer.lifeTimer
+scoreboard objectives remove veer.fsh.sculk_watcher.cry
+scoreboard objectives remove veer.fsh.sculk_watcher.cry.battlecry
+scoreboard objectives remove veer.fsh.silverfish.battlecryer.ay
+scoreboard objectives remove veer.fsh.sculk_watcher.summon.yOffset
 scoreboard objectives remove veer.fsh.hooked_shell
-scoreboard objectives remove veer.fsh.swc.startleDuration
+scoreboard objectives remove veer.fsh.sculk_watcher.cry.startleDuration

@@ -1,6 +1,5 @@
 ##
- # uninstall.mcfunction
- # Version 1
+ # Date: 12/21/22
  # Uninstall the datapack
  # Created by Galdeveer.
 ##
