@@ -4,8 +4,7 @@
  # Created by Galdeveer.
 ##
 
-## Increment loop counter
-# Starts at 1 because it immediately increments
+## Increment counter
 scoreboard players add $i veer.fsh.sculk_watcher.cry 1
 
 ## Out of Bounds
@@ -16,29 +15,33 @@ execute if score $i veer.fsh.sculk_watcher.cry matches 41.. run scoreboard playe
 execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 unless block ~ ~ ~ #veer:fsh/seethrough run scoreboard players set $seesEntity veer.fsh.sculk_watcher.cry -1
 execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 unless block ^0.5 ^ ^ #veer:fsh/seethrough unless block ^-0.5 ^ ^ #veer:fsh/seethrough run scoreboard players set $seesEntity veer.fsh.sculk_watcher.cry -1
 execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 unless block ^ ^0.5 ^ #veer:fsh/seethrough unless block ^ ^-0.5 ^ #veer:fsh/seethrough run scoreboard players set $seesEntity veer.fsh.sculk_watcher.cry -1
+
+## Detect Wall Debuh
 # particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force @a
 # particle minecraft:flame ^0.49 ^ ^ 0 0 0 0 1 force @a
 # particle minecraft:flame ^-0.49 ^ ^ 0 0 0 0 1 force @a
 # particle minecraft:flame ^ ^0.49 ^ 0 0 0 0 1 force @a
 # particle minecraft:flame ^ ^-0.49 ^ 0 0 0 0 1 force @a
 
+## Success debug
+# execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 positioned ^ ^ ^-0.25 positioned ~-0.144337567298 ~-0.144337567298 ~-0.144337567298 positioned ~ ~ ~ run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force @a
+# execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 positioned ^ ^ ^-0.25 positioned ~-0.144337567298 ~-0.144337567298 ~-0.144337567298 positioned ~0.288675134595 ~ ~ run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force @a
+# execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 positioned ^ ^ ^-0.25 positioned ~-0.144337567298 ~-0.144337567298 ~-0.144337567298 positioned ~ ~0.288675134595 ~ run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force @a
+# execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 positioned ^ ^ ^-0.25 positioned ~-0.144337567298 ~-0.144337567298 ~-0.144337567298 positioned ~ ~ ~0.288675134595 run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force @a
+# execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 positioned ^ ^ ^-0.25 positioned ~-0.144337567298 ~-0.144337567298 ~-0.144337567298 positioned ~ ~0.288675134595 ~0.288675134595 run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force @a
+# execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 positioned ^ ^ ^-0.25 positioned ~-0.144337567298 ~-0.144337567298 ~-0.144337567298 positioned ~0.288675134595 ~0.288675134595 ~ run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force @a
+# execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 positioned ^ ^ ^-0.25 positioned ~-0.144337567298 ~-0.144337567298 ~-0.144337567298 positioned ~0.288675134595 ~ ~0.288675134595 run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force @a
+# execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 positioned ^ ^ ^-0.25 positioned ~-0.144337567298 ~-0.144337567298 ~-0.144337567298 positioned ~0.288675134595 ~0.288675134595 ~0.288675134595 run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force @a
+
 ## Success
+function veer:fsh/sculk_watcher/cry/offset_to_feet
+
+## Failed Experiment
 # If the diagonal of the cube is 0.5, then the side is sqrt((0.5^2)/3) = 0.288675134595
 # sqrt((0.25^2)/3) = 0.144337567297
-# particle minecraft:flame ^ ^ ^ 0 0 0 0 1 force @a
-execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 positioned ^ ^ ^-0.25 positioned ~-0.144337567298 ~-0.144337567298 ~-0.144337567298 positioned ~ ~ ~ run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force @a
-execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 positioned ^ ^ ^-0.25 positioned ~-0.144337567298 ~-0.144337567298 ~-0.144337567298 positioned ~0.288675134595 ~ ~ run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force @a
-execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 positioned ^ ^ ^-0.25 positioned ~-0.144337567298 ~-0.144337567298 ~-0.144337567298 positioned ~ ~0.288675134595 ~ run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force @a
-execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 positioned ^ ^ ^-0.25 positioned ~-0.144337567298 ~-0.144337567298 ~-0.144337567298 positioned ~ ~ ~0.288675134595 run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force @a
-execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 positioned ^ ^ ^-0.25 positioned ~-0.144337567298 ~-0.144337567298 ~-0.144337567298 positioned ~ ~0.288675134595 ~0.288675134595 run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force @a
-execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 positioned ^ ^ ^-0.25 positioned ~-0.144337567298 ~-0.144337567298 ~-0.144337567298 positioned ~0.288675134595 ~0.288675134595 ~ run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force @a
-execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 positioned ^ ^ ^-0.25 positioned ~-0.144337567298 ~-0.144337567298 ~-0.144337567298 positioned ~0.288675134595 ~ ~0.288675134595 run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force @a
-execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 positioned ^ ^ ^-0.25 positioned ~-0.144337567298 ~-0.144337567298 ~-0.144337567298 positioned ~0.288675134595 ~0.288675134595 ~0.288675134595 run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force @a
-
-
-# execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 positioned ^ ^ ^-0.25 positioned ~-0.144337567298 ~-0.144337567298 ~-0.144337567298 if entity @s[dx=0.1,dy=0.1,dz=0.1] run scoreboard players set $seesEntity veer.fsh.sculk_watcher.cry 1
-# execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 if entity @s[dx=0.1,dy=0.1,dz=0.1] run scoreboard players set $seesEntity veer.fsh.sculk_watcher.cry 1
-execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 positioned ^ ^ ^-0.25 positioned ~-0.144337567298 ~-0.144337567298 ~-0.144337567298 if entity @s[dx=0.288675134595,dy=0.288675134595,dz=0.288675134595] run scoreboard players set $seesEntity veer.fsh.sculk_watcher.cry 1
+# particle minecraft:effect ~ ~ ~ 0 0 0 0 1 force @a
+# Why its commented out: I cannot figure out why this was detecting like a block and a half off of where it should of been. This line was suppose to be the greatest line of code I'd ever written ;(
+# execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 positioned ^ ^ ^-0.25 positioned ~-0.144337567298 ~-0.144337567298 ~-0.144337567298 if entity @s[dx=0.288675134595,dy=0.288675134595,dz=0.288675134595] run scoreboard players set $seesEntity veer.fsh.sculk_watcher.cry 1
 
 ## Startle Filter
 execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 1 if entity @s[type=#veer:fsh/sculk_watcher/cry/startle] unless score @s veer.fsh.sculk_watcher.cry.startleDuration matches 3.. run scoreboard players add @s veer.fsh.sculk_watcher.cry.startleDuration 1

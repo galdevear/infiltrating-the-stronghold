@@ -1,0 +1,17 @@
+{
+    "replace": false,
+    "values": [
+        "#veer:fsh/sculk_watcher/cry/targetable/0_595",
+        "#veer:fsh/sculk_watcher/cry/targetable/0_68",
+        "#veer:fsh/sculk_watcher/cry/targetable/0_833",
+        "#veer:fsh/sculk_watcher/cry/targetable/0_85",
+        "#veer:fsh/sculk_watcher/cry/targetable/1_19",
+        "#veer:fsh/sculk_watcher/cry/targetable/1_7",
+        "#veer:fsh/sculk_watcher/cry/targetable/1_7775",
+        "#veer:fsh/sculk_watcher/cry/targetable/2_295",
+        "#veer:fsh/sculk_watcher/cry/targetable/2_975",
+        "#veer:fsh/sculk_watcher/cry/targetable/6_8",
+        "#veer:fsh/sculk_watcher/cry/targetable/small",
+        "player"
+    ]
+}
