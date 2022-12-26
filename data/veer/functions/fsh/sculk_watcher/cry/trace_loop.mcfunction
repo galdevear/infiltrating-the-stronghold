@@ -1,65 +1,21 @@
 ##
- # Date: 12/19/22
+ # Date: 12/25/22
  # Recursive loop that checks for a ray along the vector
  # Created by Galdeveer.
 ##
 
-## Increment counter
-scoreboard players add $i veer.fsh.sculk_watcher.cry 1
+## Out of Bounds detection
+execute if score $steps veer.fsh.sculk_watcher.cry matches 40.. run scoreboard players set $seesEntity veer.fsh.sculk_watcher.cry -2
 
-## Out of Bounds
-execute if score $i veer.fsh.sculk_watcher.cry matches 41.. run scoreboard players set $seesEntity veer.fsh.sculk_watcher.cry -2
-
-## Detect Wall Debug
-execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 run particle flame ~ ~ ~ 0 0 0 0 1 force
-# The main corners are based on a 45deg skewed 1 block sized cube
-# x/z plane main corners
-execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 positioned ^0.707106781187 ^ ^ run particle flame ~ ~ ~ 0 0 0 0 1 force
-execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 positioned ^-0.707106781187 ^ ^ run particle flame ~ ~ ~ 0 0 0 0 1 force
-
-# y plane main corners.
-execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 positioned ^ ^0.707106781187 ^ run particle flame ~ ~ ~ 0 0 0 0 1 force
-execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 positioned ^ ^-0.707106781187 ^ run particle flame ~ ~ ~ 0 0 0 0 1 force
-
-# Cross reference corners with a secondary square
-# x/z plane cross corners
-# execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 positioned ^ ^ ^-0.5 positioned ^-0.707106781187 ^ ^ run particle soul_fire_flame ~ ~ ~ 0 0 0 0 1 force
-# execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 positioned ^ ^ ^-0.5 positioned ^0.707106781187 ^ ^ run particle soul_fire_flame ~ ~ ~ 0 0 0 0 1 force
-# # y plane cross corners.
-# execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 positioned ^ ^ ^-0.5 positioned ^ ^-0.707106781187 ^ run particle soul_fire_flame ~ ~ ~ 0 0 0 0 1 force
-# execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 positioned ^ ^ ^-0.5 positioned ^ ^0.707106781187 ^ run particle soul_fire_flame ~ ~ ~ 0 0 0 0 1 force
+## Wall Detection Debug
+function veer:fsh/sculk_watcher/cry/trace_block_debug
 
 ## Detect wall
-# Fail if the block is not seethrough.
-execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 unless block ~ ~ ~ #veer:fsh/seethrough run scoreboard players set $seesEntity veer.fsh.sculk_watcher.cry -1
-# The main corners are based on a 45deg skewed 1 block sized cube
-# x/z plane main corners
-execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 unless block ^0.707106781187 ^ ^ #veer:fsh/seethrough unless block ^-0.707106781187 ^ ^ #veer:fsh/seethrough run scoreboard players set $seesEntity veer.fsh.sculk_watcher.cry -1
-# y plane main corners.
-execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 unless block ^ ^0.707106781187 ^ #veer:fsh/seethrough unless block ^ ^-0.707106781187 ^ #veer:fsh/seethrough run scoreboard players set $seesEntity veer.fsh.sculk_watcher.cry -1
-# Cross reference corners with a secondary square
-# x/z plane cross corners
-execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 unless block ^0.707106781187 ^ ^ #veer:fsh/seethrough positioned ^ ^ ^-0.5 unless block ^-0.707106781187 ^ ^ #veer:fsh/seethrough run scoreboard players set $seesEntity veer.fsh.sculk_watcher.cry -1
-execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 unless block ^-0.707106781187 ^ ^ #veer:fsh/seethrough positioned ^ ^ ^-0.5 unless block ^0.707106781187 ^ ^ #veer:fsh/seethrough run scoreboard players set $seesEntity veer.fsh.sculk_watcher.cry -1
-# y plane cross corners.
-execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 unless block ^ ^0.707106781187 ^ #veer:fsh/seethrough positioned ^ ^ ^-0.5 unless block ^ ^-0.707106781187 ^ #veer:fsh/seethrough run scoreboard players set $seesEntity veer.fsh.sculk_watcher.cry -1
-execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 unless block ^ ^-0.707106781187 ^ #veer:fsh/seethrough positioned ^ ^ ^-0.5 unless block ^ ^0.707106781187 ^ #veer:fsh/seethrough run scoreboard players set $seesEntity veer.fsh.sculk_watcher.cry -1
+function veer:fsh/sculk_watcher/cry/detect_wall
 
 ## Detect Wall (0.25 scale)
-# Fail if the block is not seethrough.
-execute if score $seesEntity veer.fsh.sculk_watcher.cry matches -1 unless block ~ ~ ~ #veer:fsh/seethrough run scoreboard players set $seesEntity veer.fsh.sculk_watcher.cry -2
-# The main corners are based on a 45deg skewed 1 block sized cube
-# x/z plane main corners
-execute if score $seesEntity veer.fsh.sculk_watcher.cry matches -1 unless block ^0.353553390593 ^ ^ #veer:fsh/seethrough unless block ^-0.353553390593 ^ ^ #veer:fsh/seethrough run scoreboard players set $seesEntity veer.fsh.sculk_watcher.cry -2
-# y plane main corners.
-execute if score $seesEntity veer.fsh.sculk_watcher.cry matches -1 unless block ^ ^0.353553390593 ^ #veer:fsh/seethrough unless block ^ ^-0.353553390593 ^ #veer:fsh/seethrough run scoreboard players set $seesEntity veer.fsh.sculk_watcher.cry -2
-# Cross reference corners with a secondary square
-# x/z plane cross corners
-execute if score $seesEntity veer.fsh.sculk_watcher.cry matches -1 unless block ^0.353553390593 ^ ^ #veer:fsh/seethrough positioned ^ ^ ^-0.25 unless block ^-0.353553390593 ^ ^ #veer:fsh/seethrough run scoreboard players set $seesEntity veer.fsh.sculk_watcher.cry -2
-execute if score $seesEntity veer.fsh.sculk_watcher.cry matches -1 unless block ^-0.353553390593 ^ ^ #veer:fsh/seethrough positioned ^ ^ ^-0.25 unless block ^0.353553390593 ^ ^ #veer:fsh/seethrough run scoreboard players set $seesEntity veer.fsh.sculk_watcher.cry -2
-# y plane cross corners.
-execute if score $seesEntity veer.fsh.sculk_watcher.cry matches -1 unless block ^ ^0.353553390593 ^ #veer:fsh/seethrough positioned ^ ^ ^-0.25 unless block ^ ^-0.353553390593 ^ #veer:fsh/seethrough run scoreboard players set $seesEntity veer.fsh.sculk_watcher.cry -2
-execute if score $seesEntity veer.fsh.sculk_watcher.cry matches -1 unless block ^ ^-0.353553390593 ^ #veer:fsh/seethrough positioned ^ ^ ^-0.25 unless block ^ ^0.353553390593 ^ #veer:fsh/seethrough run scoreboard players set $seesEntity veer.fsh.sculk_watcher.cry -2
+# only runs on the final last step
+execute if score $seesEntity veer.fsh.sculk_watcher.cry matches -1 run function veer:fsh/sculk_watcher/cry/detect_wall_mini_25
 
 ## Trigonometric Detect Entity
 execute if score $seesEntity veer.fsh.sculk_watcher.cry matches -1..0 positioned ^ ^ ^-0.25 positioned ~-0.144337567298 ~-0.144337567298 ~-0.144337567298 positioned ~-0.144337567298 ~-0.144337567298 ~-0.144337567298 if entity @s[dx=0,dy=0,dz=0] positioned ~0.144337567298 ~0.144337567298 ~0.144337567298 positioned ~-0.711324865405 ~-0.711324865405 ~-0.711324865405 if entity @s[dx=0,dy=0,dz=0] run scoreboard players set $seesEntity veer.fsh.sculk_watcher.cry 1
@@ -89,14 +45,14 @@ execute if score $seesEntity veer.fsh.sculk_watcher.cry matches -1..0 positioned
 # For any entity with all dimensions greater than that value it is mathematically perfect raytracing.
 # Could potentially have trouble detecting item frames, glow item frames, marker entities, marker armorstands or lightning.
 
-## Hardcoded detect entity
-# function veer:fsh/sculk_watcher/cry/offset_to_feet
-
 ## Startle Filter
 execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 1 if entity @s[type=#veer:fsh/sculk_watcher/cry/startle] unless score @s veer.fsh.sculk_watcher.cry.startleDuration matches 3.. run scoreboard players add @s veer.fsh.sculk_watcher.cry.startleDuration 1
 execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 1 if entity @s[type=#veer:fsh/sculk_watcher/cry/startle] if score @s veer.fsh.sculk_watcher.cry.startleDuration matches 3.. run scoreboard players set $seesEntity veer.fsh.sculk_watcher.cry -1
 
 ## Recurse
+# Iterate steps
+scoreboard players add $steps veer.fsh.sculk_watcher.cry 1
+# Recursive call
 execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 positioned ^ ^ ^0.5 run function veer:fsh/sculk_watcher/cry/trace_loop
 
 ## Return

@@ -12,6 +12,7 @@
         "#veer:fsh/sculk_watcher/cry/targetable/2_975",
         "#veer:fsh/sculk_watcher/cry/targetable/6_8",
         "#veer:fsh/sculk_watcher/cry/targetable/small",
-        "player"
-    ]
+        "player",
+        "armor_stand"
+        ]
 }
