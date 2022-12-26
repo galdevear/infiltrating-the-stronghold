@@ -14,8 +14,13 @@ function veer:fsh/sculk_watcher/cry/trace_block_debug
 function veer:fsh/sculk_watcher/cry/detect_wall
 
 ## Detect Wall (0.25 scale)
-# only runs on the final last step
+# Run when wall is detected on large scale
+# If its found on the first then don't check for entity
+# If its not detected on first, but is on second, then stop but still allow entity detection
+# If its found on neither first or second then ignore the wall being found
 execute if score $seesEntity veer.fsh.sculk_watcher.cry matches -1 run function veer:fsh/sculk_watcher/cry/detect_wall_mini_25
+execute if score $seesEntity veer.fsh.sculk_watcher.cry matches -1 positioned ^ ^ ^0.25 run function veer:fsh/sculk_watcher/cry/detect_wall_mini_25
+execute if score $seesEntity veer.fsh.sculk_watcher.cry matches -1 run scoreboard players set $seesEntity veer.fsh.sculk_watcher.cry 0 
 
 ## Trigonometric Detect Entity
 execute if score $seesEntity veer.fsh.sculk_watcher.cry matches -1..0 positioned ^ ^ ^-0.25 positioned ~-0.144337567298 ~-0.144337567298 ~-0.144337567298 positioned ~-0.144337567298 ~-0.144337567298 ~-0.144337567298 if entity @s[dx=0,dy=0,dz=0] positioned ~0.144337567298 ~0.144337567298 ~0.144337567298 positioned ~-0.711324865405 ~-0.711324865405 ~-0.711324865405 if entity @s[dx=0,dy=0,dz=0] run scoreboard players set $seesEntity veer.fsh.sculk_watcher.cry 1
@@ -56,4 +61,5 @@ scoreboard players add $steps veer.fsh.sculk_watcher.cry 1
 execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 positioned ^ ^ ^0.5 run function veer:fsh/sculk_watcher/cry/trace_loop
 
 ## Return
+# execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 1 run particle crimson_spore ~ ~ ~ 0 0 0 0 1 force @a
 execute unless score $seesEntity veer.fsh.sculk_watcher.cry matches 1 run scoreboard players set $seesEntity veer.fsh.sculk_watcher.cry 0
