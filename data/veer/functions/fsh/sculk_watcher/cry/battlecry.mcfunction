@@ -6,9 +6,7 @@
 
 #>Ray trace for player
 # Returns seesEntity
-execute at @s positioned ~ ~ ~ run function veer:fsh/sculk_watcher/cry/look_for_entity
-
-# 
+execute at @s positioned ~ ~ ~ run function veer:fsh/sculk_watcher/cry/look_for_entity 
 
 # Increment ending at 7
 execute if score @s veer.fsh.sculk_watcher.cry.battlecry matches ..6 run scoreboard players add @s veer.fsh.sculk_watcher.cry.battlecry 1

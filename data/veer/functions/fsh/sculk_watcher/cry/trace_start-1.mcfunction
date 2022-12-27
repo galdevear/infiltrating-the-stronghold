@@ -20,10 +20,16 @@
 # Initialize scores
 scoreboard players set $steps veer.fsh.sculk_watcher.cry 0
 scoreboard players set $seesEntity veer.fsh.sculk_watcher.cry 0
-# scoreboard players set $lxPosOld veer.fsh.sculk_watcher.cry 0
-# scoreboard players set $lxNegOld veer.fsh.sculk_watcher.cry 0
-# scoreboard players set $lxPosOld veer.fsh.sculk_watcher.cry 0
-# scoreboard players set $lyNegOld veer.fsh.sculk_watcher.cry 0
+scoreboard players set $lxPosOld veer.fsh.sculk_watcher.cry 0
+scoreboard players set $lxNegOld veer.fsh.sculk_watcher.cry 0
+scoreboard players set $lxPosOld veer.fsh.sculk_watcher.cry 0
+scoreboard players set $lyNegOld veer.fsh.sculk_watcher.cry 0
+scoreboard players set $upOld veer.fsh.sculk_watcher.cry 0
+scoreboard players set $downOld veer.fsh.sculk_watcher.cry 0
+scoreboard players set $leftDownOld veer.fsh.sculk_watcher.cry 0
+scoreboard players set $leftUpOld veer.fsh.sculk_watcher.cry 0
+scoreboard players set $rightDownOld veer.fsh.sculk_watcher.cry 0
+scoreboard players set $rightUpOld veer.fsh.sculk_watcher.cry 0
 
 # If it is glowing, then return successful
 execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 if predicate veer:fsh/is_glowing run scoreboard players set $seesEntity veer.fsh.sculk_watcher.cry 1
