@@ -13,7 +13,7 @@
 #declare objective veer.fsh.sculk_watcher.summon.yOffset
 #declare objective veer.fsh.hooked_shell
 #declare objective veer.fsh.sculk_watcher.cry.startleDuration
-#declare objective veer.fsh.sculk_watcher.cry.detect_wall_2d_micro
+#declare objective veer.fsh.sculk_watcher.cry.detect_wall.micro
 
 scoreboard objectives add veer.fsh.fix_glowing.glowTimer dummy
 scoreboard objectives add veer.fsh.silverish.battlecryer.lifeTimer dummy "Silverfish Battlecryer Timer"
@@ -23,4 +23,4 @@ scoreboard objectives add veer.fsh.silverfish.battlecryer.ay dummy "Actual Y val
 scoreboard objectives add veer.fsh.sculk_watcher.summon.yOffset dummy "Summon Sculk Watcher"
 scoreboard objectives add veer.fsh.hooked_shell dummy
 scoreboard objectives add veer.fsh.sculk_watcher.cry.startleDuration dummy
-scoreboard objectives add veer.fsh.sculk_watcher.cry.detect_wall_2d_micro dummy
+scoreboard objectives add veer.fsh.sculk_watcher.cry.detect_wall.micro dummy

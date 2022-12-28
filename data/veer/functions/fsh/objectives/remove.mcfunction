@@ -13,4 +13,4 @@ scoreboard objectives remove veer.fsh.silverfish.battlecryer.ay
 scoreboard objectives remove veer.fsh.sculk_watcher.summon.yOffset
 scoreboard objectives remove veer.fsh.hooked_shell
 scoreboard objectives remove veer.fsh.sculk_watcher.cry.startleDuration
-scoreboard objectives remove veer.fsh.sculk_watcher.cry.detect_wall_2d_micro
+scoreboard objectives remove veer.fsh.sculk_watcher.cry.detect_wall.micro
