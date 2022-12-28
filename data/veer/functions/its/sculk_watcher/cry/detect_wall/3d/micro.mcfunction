@@ -5,7 +5,7 @@ scoreboard players set $leftUp veer.its.sculk_watcher.cry 0
 scoreboard players set $rightDown veer.its.sculk_watcher.cry 0
 scoreboard players set $rightUp veer.its.sculk_watcher.cry 0
 
-function veer:its/sculk_watcher/cry/detect_wall/3d/debug
+# function veer:its/sculk_watcher/cry/detect_wall/3d/debug
 # Checks at half scale
 
 # get up
