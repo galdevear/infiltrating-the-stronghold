@@ -37,10 +37,10 @@ execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 if score $lyNe
 execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 if score $lyPos veer.fsh.sculk_watcher.cry matches 1 if score $lyNeg veer.fsh.sculk_watcher.cry matches 1 run scoreboard players set $seesEntity veer.fsh.sculk_watcher.cry -1
 
 # set lx pos old
-execute if score $seesEntity veer.fsh.sculk_watcher.cry matches -1..0 store result score $lxPosOld veer.fsh.sculk_watcher.cry run scoreboard players get $lxPos veer.fsh.sculk_watcher.cry 
+execute store result score $lxPosOld veer.fsh.sculk_watcher.cry run scoreboard players get $lxPos veer.fsh.sculk_watcher.cry 
 # set lx neg old
-execute if score $seesEntity veer.fsh.sculk_watcher.cry matches -1..0 store result score $lxNegOld veer.fsh.sculk_watcher.cry run scoreboard players get $lxNeg veer.fsh.sculk_watcher.cry
+execute store result score $lxNegOld veer.fsh.sculk_watcher.cry run scoreboard players get $lxNeg veer.fsh.sculk_watcher.cry
 # set ly pos old
-execute if score $seesEntity veer.fsh.sculk_watcher.cry matches -1..0 store result score $lyPosOld veer.fsh.sculk_watcher.cry run scoreboard players get $lyPos veer.fsh.sculk_watcher.cry
+execute store result score $lyPosOld veer.fsh.sculk_watcher.cry run scoreboard players get $lyPos veer.fsh.sculk_watcher.cry
 # set ly neg old
-execute if score $seesEntity veer.fsh.sculk_watcher.cry matches -1..0 store result score $lyNegOld veer.fsh.sculk_watcher.cry run scoreboard players get $lyNeg veer.fsh.sculk_watcher.cry
+execute store result score $lyNegOld veer.fsh.sculk_watcher.cry run scoreboard players get $lyNeg veer.fsh.sculk_watcher.cry

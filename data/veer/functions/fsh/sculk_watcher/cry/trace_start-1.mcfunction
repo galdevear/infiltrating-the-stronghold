@@ -16,6 +16,12 @@
 #declare score_holder $lyPosOld
 #declare score_holder $lyNeg
 #declare score_holder $lyNegOld
+#declare score_holder $upOld
+#declare score_holder $downOld
+#declare score_holder $leftDownOld
+#declare score_holder $rightDownOld
+#declare score_holder $leftUpOld
+#declare score_holder $rightUpOld
 
 # Initialize scores
 scoreboard players set $steps veer.fsh.sculk_watcher.cry 0

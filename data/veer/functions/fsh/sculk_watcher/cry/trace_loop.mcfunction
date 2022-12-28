@@ -12,10 +12,11 @@ function veer:fsh/sculk_watcher/cry/trace_block_debug
 
 ## Detect wall
 # Main raytrace block check
-execute unless block ~ ~ ~ #veer:fsh/seethrough run scoreboard players set $seesEntity veer.fsh.sculk_watcher.cry -1
-execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 run function veer:fsh/sculk_watcher/cry/detect_wall/2d/detect
-execute if score $seesEntity veer.fsh.sculk_watcher.cry matches -1 run function veer:fsh/sculk_watcher/cry/detect_wall/2d/micro
-execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 run function veer:fsh/sculk_watcher/cry/detect_wall/3d/detect
+# seesEntity = {1:Found entity, 0=still looking, -1=blocked on large scale, -2=blocked on small scale} 
+# -1 either changes to 0 or -2 eventually
+execute if score $seesEntity veer.fsh.sculk_watcher.cry matches 0 run function veer:fsh/sculk_watcher/cry/detect_wall/detect
+# Its ok if stuff gets skipped when skipping to this function. It will satisfy the purposes of all the ones that get skipped.
+execute if score $seesEntity veer.fsh.sculk_watcher.cry matches -1 run function veer:fsh/sculk_watcher/cry/detect_wall/micro
 
 ## Trigonometric Detect Entity
 execute if score $seesEntity veer.fsh.sculk_watcher.cry matches -1..0 run function veer:fsh/sculk_watcher/cry/detect_entity_trig 
