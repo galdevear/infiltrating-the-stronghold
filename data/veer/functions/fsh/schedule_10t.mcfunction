@@ -5,7 +5,7 @@
  # Created by Galdeveer.
 ##
 
-schedule function veer:fsh/schedule_10t 10t
+schedule function veer:its/schedule_10t 10t
 
 # Sculk eye alarm sound
-execute as @e[type=snowball,tag=veer.fsh.sculk_watcher,tag=!veer.fsh.sculk_watcher.new] run function veer:fsh/sculk_watcher/sound
+execute as @e[type=snowball,tag=veer.its.sculk_watcher,tag=!veer.its.sculk_watcher.new] run function veer:its/sculk_watcher/sound

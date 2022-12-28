@@ -10,12 +10,12 @@
                            "max": 15
                        }
                    },
-                   "nbt": "{Tags:[\"veer.fsh.obsidian_watcher\"]}"
+                   "nbt": "{Tags:[\"veer.its.obsidian_watcher\"]}"
                }
            }
        }
    },
    "rewards": {
-       "function": "veer:fsh/obsidian_watcher/killed_by_player"
+       "function": "veer:its/obsidian_watcher/killed_by_player"
    }
 }

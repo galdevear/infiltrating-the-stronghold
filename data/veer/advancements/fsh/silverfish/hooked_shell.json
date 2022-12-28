@@ -9,7 +9,7 @@
               "entity": "this",
               "predicate": {
                 "type": "minecraft:falling_block",
-                "nbt": "{Tags:[\"veer.fsh.hooked_shell\"]}"
+                "nbt": "{Tags:[\"veer.its.hooked_shell\"]}"
               }
             }
           ]
@@ -17,7 +17,7 @@
       }
     },
     "rewards": {
-        "function": "veer:fsh/silverfish/hooked_shell"
+        "function": "veer:its/silverfish/hooked_shell"
     }
   }
   

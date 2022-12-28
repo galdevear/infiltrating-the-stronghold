@@ -5,4 +5,4 @@
  # Created by Galdeveer.
 ##
 
-execute if entity @s[predicate=veer:fsh/in_stronghold,tag=!veer.fsh.end_watcher, tag=!veer.fsh.obsidian_watcher, tag=!veer.fsh.sculk_watcher, predicate=veer:fsh/watcher_pair/replace_chance] run function veer:fsh/watcher_pair/replace
+execute if entity @s[predicate=veer:its/in_stronghold,tag=!veer.its.end_watcher, tag=!veer.its.obsidian_watcher, tag=!veer.its.sculk_watcher, predicate=veer:its/watcher_pair/replace_chance] run function veer:its/watcher_pair/replace

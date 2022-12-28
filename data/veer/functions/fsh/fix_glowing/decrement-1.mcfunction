@@ -5,7 +5,7 @@
  # Created by Galdeveer.
 ##
 
-execute if score @s veer.fsh.fix_glowing.glowTimer matches 0 run data remove entity @s Glowing
-scoreboard players remove @s veer.fsh.fix_glowing.glowTimer 1
+execute if score @s veer.its.fix_glowing.glowTimer matches 0 run data remove entity @s Glowing
+scoreboard players remove @s veer.its.fix_glowing.glowTimer 1
 
 # Leaves it at -1 when finished

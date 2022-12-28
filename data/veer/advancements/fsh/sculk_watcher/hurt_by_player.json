@@ -10,12 +10,12 @@
                            "max": 15
                        }
                    },
-                   "nbt": "{Tags:[\"veer.fsh.sculk_watcher\"]}"
+                   "nbt": "{Tags:[\"veer.its.sculk_watcher\"]}"
                }
            }
        }
    },
    "rewards": {
-       "function": "veer:fsh/sculk_watcher/hurt_by_player"
+       "function": "veer:its/sculk_watcher/hurt_by_player"
    }
 }

@@ -5,10 +5,10 @@
 ##
 
 # Reset scheduled functions
-schedule clear veer:fsh/schedule
-schedule clear veer:fsh/schedule_10t
-schedule function veer:fsh/schedule 1t
-schedule function veer:fsh/schedule_10t 1t
+schedule clear veer:its/schedule
+schedule clear veer:its/schedule_10t
+schedule function veer:its/schedule 1t
+schedule function veer:its/schedule_10t 1t
 
 # Add any new objectives
-function veer:fsh/objectives/add
+function veer:its/objectives/add

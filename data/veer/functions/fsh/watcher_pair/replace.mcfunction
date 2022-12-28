@@ -15,13 +15,13 @@
 
 # Tag should not be touched inside the summon function
 # 50/50 which one gets summoned
-execute if predicate veer:fsh/rng/50 run tag @s add veer.fsh.watcher_pair.replace.true
-execute if entity @s[tag=veer.fsh.watcher_pair.replace.true] at @s positioned ~ ~1 ~ run function veer:fsh/end_watcher/summon
-execute if entity @s[tag=!veer.fsh.watcher_pair.replace.true] at @s positioned ~ ~1 ~ run function veer:fsh/obsidian_watcher/summon
-tag @s remove veer.fsh.watcher_pair.replace.true
+execute if predicate veer:its/rng/50 run tag @s add veer.its.watcher_pair.replace.true
+execute if entity @s[tag=veer.its.watcher_pair.replace.true] at @s positioned ~ ~1 ~ run function veer:its/end_watcher/summon
+execute if entity @s[tag=!veer.its.watcher_pair.replace.true] at @s positioned ~ ~1 ~ run function veer:its/obsidian_watcher/summon
+tag @s remove veer.its.watcher_pair.replace.true
 
 # Summon sculk watcher
-execute at @s run function veer:fsh/sculk_watcher/summon
+execute at @s run function veer:its/sculk_watcher/summon
 
 # Void previous entity
-function veer:fsh/util/kill_in_void
+function veer:its/util/kill_in_void

@@ -4,6 +4,6 @@
  # Created by Galdeveer.
 ##
 
-schedule function veer:fsh/schedule 1s
+schedule function veer:its/schedule 1s
 
-execute as @e run function veer:fsh/schedule-1
+execute as @e run function veer:its/schedule-1

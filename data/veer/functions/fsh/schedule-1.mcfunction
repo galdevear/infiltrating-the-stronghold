@@ -4,36 +4,36 @@
 ##
 
 #> New Entity Detection
-#declare tag veer.fsh.entity.new
-#declare tag veer.fsh.entity
+#declare tag veer.its.entity.new
+#declare tag veer.its.entity
 
-tag @s[tag=veer.fsh.entity.new] remove veer.fsh.entity.new
-tag @s[tag=!veer.fsh.entity,tag=!global.ignore,tag=!global.ignore.pos] add veer.fsh.entity.new
-tag @s[tag=!veer.fsh.entity,tag=!global.ignore,tag=!global.ignore.pos] add veer.fsh.entity
+tag @s[tag=veer.its.entity.new] remove veer.its.entity.new
+tag @s[tag=!veer.its.entity,tag=!global.ignore,tag=!global.ignore.pos] add veer.its.entity.new
+tag @s[tag=!veer.its.entity,tag=!global.ignore,tag=!global.ignore.pos] add veer.its.entity
 
 #> Silverfish
 # Also includes silverfish queen endermite spawning. (any silverfish in stronghold)
-execute if entity @s[type=silverfish, tag=veer.fsh.entity.new] run function veer:fsh/silverfish/init
+execute if entity @s[type=silverfish, tag=veer.its.entity.new] run function veer:its/silverfish/init
 
 #> Watcher Spawning
 # Swap some new spawns with a pair of watchers
-execute if entity @s[type=#veer:fsh/watcher_pair/replaceable,tag=veer.fsh.entity.new] run function veer:fsh/watcher_pair/detect_replaceable
+execute if entity @s[type=#veer:its/watcher_pair/replaceable,tag=veer.its.entity.new] run function veer:its/watcher_pair/detect_replaceable
 
 #> Stealth Mechanics
-execute if entity @s[type=snowball,tag=veer.fsh.sculk_watcher.cry] run function veer:fsh/sculk_watcher/cry/battlecry
+execute if entity @s[type=snowball,tag=veer.its.sculk_watcher.cry] run function veer:its/sculk_watcher/cry/battlecry
 
 #> Potion effect tears
 # Obsidian Watcher
-execute if entity @s[type=ender_pearl,tag=veer.fsh.obsidian_watcher] run function veer:fsh/obsidian_watcher/attack
+execute if entity @s[type=ender_pearl,tag=veer.its.obsidian_watcher] run function veer:its/obsidian_watcher/attack
 # End Watcher
-execute if entity @s[type=ender_pearl,tag=veer.fsh.end_watcher] run function veer:fsh/end_watcher/attack
+execute if entity @s[type=ender_pearl,tag=veer.its.end_watcher] run function veer:its/end_watcher/attack
 
 #> Removing glowing from 2dproj
-execute if entity @s[type=#veer:fsh/fix_glowing/passengers, tag=veer.fsh.fix_glowing.passenger] run function veer:fsh/fix_glowing/decrement
+execute if entity @s[type=#veer:its/fix_glowing/passengers, tag=veer.its.fix_glowing.passenger] run function veer:its/fix_glowing/decrement
 
 #TODO: Change mostly to bind vex
 #> Init sculk watcher
-execute if entity @s[type=snowball,tag=veer.fsh.sculk_watcher.new] run function veer:fsh/sculk_watcher/init
+execute if entity @s[type=snowball,tag=veer.its.sculk_watcher.new] run function veer:its/sculk_watcher/init
 
 #> Bind tagged vexes to their location
-execute if entity @s[type=vex,tag=veer.its.util.bind_vex] run function veer:fsh/util/bind_vex
+execute if entity @s[type=vex,tag=veer.its.util.bind_vex] run function veer:its/util/bind_vex

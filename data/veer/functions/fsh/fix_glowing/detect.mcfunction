@@ -3,4 +3,4 @@
  # Created by Galdeveer.
 ##
 
-execute if predicate veer:fsh/is_glowing run function veer:fsh/fix_glowing/detect-1
+execute if predicate veer:its/is_glowing run function veer:its/fix_glowing/detect-1

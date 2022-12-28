@@ -1,1 +1,1 @@
-execute unless block ~ ~ ~ #veer:fsh/seethrough run scoreboard players set $seesEntity veer.fsh.sculk_watcher.cry -2
+execute unless block ~ ~ ~ #veer:its/seethrough run scoreboard players set $seesEntity veer.its.sculk_watcher.cry -2

@@ -10,7 +10,7 @@ INSTALLING
 Go to .minecraft. Then open saves. Open the world folder you would like to add the datapack to. Then open the datapack folder. Drag and drop the datapack into there.
 
 UNINSTALLING
-- Run the following function before uninstalling /function veer:fsh/uninstall
+- Run the following function before uninstalling /function veer:its/uninstall
 Then, simply remove the pack from where you placed it originally.
 
 Licensed under creative commons.

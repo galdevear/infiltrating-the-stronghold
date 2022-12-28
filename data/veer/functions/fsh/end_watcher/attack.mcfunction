@@ -4,4 +4,4 @@
  # Created by Galdeveer.
 ##
 
-execute if predicate veer:fsh/end_watcher/can_cry run function veer:fsh/end_watcher/attack-1
+execute if predicate veer:its/end_watcher/can_cry run function veer:its/end_watcher/attack-1

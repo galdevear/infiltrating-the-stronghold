@@ -5,7 +5,7 @@
 ##
 
 # Cancel all scheduled functions
-schedule clear veer:fsh/schedule
-schedule clear veer:fsh/schedule_10t
+schedule clear veer:its/schedule
+schedule clear veer:its/schedule_10t
 # Remove all objectives
-function veer:fsh/objectives/remove
+function veer:its/objectives/remove

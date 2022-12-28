@@ -23,4 +23,4 @@
 # For any entity with all dimensions greater than that value it is mathematically perfect raytracing.
 # Could potentially have trouble detecting item frames, glow item frames, marker entities, marker armorstands or lightning.
 
-execute positioned ^ ^ ^-0.25 positioned ~-0.144337567298 ~-0.144337567298 ~-0.144337567298 positioned ~-0.144337567298 ~-0.144337567298 ~-0.144337567298 if entity @s[dx=0,dy=0,dz=0] positioned ~0.144337567298 ~0.144337567298 ~0.144337567298 positioned ~-0.711324865405 ~-0.711324865405 ~-0.711324865405 if entity @s[dx=0,dy=0,dz=0] run scoreboard players set $seesEntity veer.fsh.sculk_watcher.cry 1
+execute positioned ^ ^ ^-0.25 positioned ~-0.144337567298 ~-0.144337567298 ~-0.144337567298 positioned ~-0.144337567298 ~-0.144337567298 ~-0.144337567298 if entity @s[dx=0,dy=0,dz=0] positioned ~0.144337567298 ~0.144337567298 ~0.144337567298 positioned ~-0.711324865405 ~-0.711324865405 ~-0.711324865405 if entity @s[dx=0,dy=0,dz=0] run scoreboard players set $seesEntity veer.its.sculk_watcher.cry 1

@@ -10,12 +10,12 @@
                            "max": 15
                        }
                    },
-                   "nbt": "{Tags:[\"veer.fsh.end_watcher\"]}"
+                   "nbt": "{Tags:[\"veer.its.end_watcher\"]}"
                }
            }
        }
    },
    "rewards": {
-       "function": "veer:fsh/end_watcher/killed_by_player"
+       "function": "veer:its/end_watcher/killed_by_player"
    }
 }
