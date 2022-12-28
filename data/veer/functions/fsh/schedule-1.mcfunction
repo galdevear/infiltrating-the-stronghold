@@ -32,7 +32,8 @@ execute if entity @s[type=ender_pearl,tag=veer.fsh.end_watcher] run function vee
 execute if entity @s[type=#veer:fsh/fix_glowing/passengers, tag=veer.fsh.fix_glowing.passenger] run function veer:fsh/fix_glowing/decrement
 
 #TODO: Change mostly to bind vex
-#> Init new watchers
+#> Init sculk watcher
 execute if entity @s[type=snowball,tag=veer.fsh.sculk_watcher.new] run function veer:fsh/sculk_watcher/init
-execute if entity @s[type=vex,tag=veer.fsh.end_watcher.new] run function veer:fsh/end_watcher/init
-execute if entity @s[type=vex,tag=veer.fsh.obsidian_watcher.new] run function veer:fsh/obsidian_watcher/init
+
+#> Bind tagged vexes to their location
+execute if entity @s[type=vex,tag=veer.its.util.bind_vex] run function veer:fsh/util/bind_vex

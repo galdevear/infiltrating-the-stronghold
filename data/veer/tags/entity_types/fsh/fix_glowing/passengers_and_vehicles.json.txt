@@ -1,7 +1,0 @@
-{
-    "replace": false,
-    "values": [
-        "#veer:fsh/fix_glowing/passengers",
-        "#veer:fsh/fix_glowing/vehicles"
-    ]
-}

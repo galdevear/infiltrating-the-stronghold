@@ -3,8 +3,9 @@
  # Created by Galdeveer. 
 ##
 
+
 # Tag to call function on entity
-# declare tag veer.its.util.bind_vex Calls bind_vex function and removes this tag when finished.
+#declare tag veer.its.util.bind_vex Calls bind_vex function and removes this tag when finished.
 # Current Position
 #alias vector PosX Pos[0]
 #alias vector PosY Pos[1]
@@ -18,4 +19,4 @@ data modify entity @s BoundY set from entity @s Pos[1]
 data modify entity @s BoundZ set from entity @s Pos[2]
 
 ## Remove call tag
-# tag @s remove veer.its.util.bind_vex
+tag @s remove veer.its.util.bind_vex
