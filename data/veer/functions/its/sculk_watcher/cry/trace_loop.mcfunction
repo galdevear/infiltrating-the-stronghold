@@ -10,7 +10,7 @@ execute if score $steps veer.its.sculk_watcher.cry matches 40.. run scoreboard p
 ## Wall Detection Debug
 function veer:its/sculk_watcher/cry/trace_block_debug
 
-## Detect wall
+## Detect wall and player
 # Main raytrace block check
 # seesEntity = {1:Found entity, 0=still looking, -1=blocked on large scale, -2=blocked on small scale} 
 # -1 either changes to 0 or -2 eventually
@@ -18,8 +18,6 @@ execute if score $seesEntity veer.its.sculk_watcher.cry matches 0 run function v
 # Its ok if stuff gets skipped when skipping to this function. It will satisfy the purposes of all the ones that get skipped.
 execute if score $seesEntity veer.its.sculk_watcher.cry matches -1 run function veer:its/sculk_watcher/cry/detect_wall/micro
 
-## Trigonometric Detect Entity
-execute if score $seesEntity veer.its.sculk_watcher.cry matches -1..0 run function veer:its/sculk_watcher/cry/detect_entity_trig 
 
 ## Startle Filter
 execute if score $seesEntity veer.its.sculk_watcher.cry matches 1 if entity @s[type=#veer:its/sculk_watcher/cry/startle] unless score @s veer.its.sculk_watcher.cry.startleDuration matches 3.. run scoreboard players add @s veer.its.sculk_watcher.cry.startleDuration 1
