@@ -8,7 +8,7 @@
 execute if score $steps veer.its.sculk_watcher.cry matches 40.. run scoreboard players set $seesEntity veer.its.sculk_watcher.cry -2
 
 ## Wall Detection Debug
-function veer:its/sculk_watcher/cry/trace_block_debug
+# function veer:its/sculk_watcher/cry/trace_block_debug
 
 ## Detect wall
 # Main raytrace block check

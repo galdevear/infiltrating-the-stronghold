@@ -6,7 +6,7 @@ scoreboard players set $leftUpOld veer.its.sculk_watcher.cry.detect_wall.micro 0
 scoreboard players set $rightDownOld veer.its.sculk_watcher.cry.detect_wall.micro 0
 scoreboard players set $rightUpOld veer.its.sculk_watcher.cry.detect_wall.micro 0
 
-function veer:its/sculk_watcher/cry/detect_wall/3d/debug
+# function veer:its/sculk_watcher/cry/detect_wall/3d/debug
 # Get scores (half scale)
 # get Up
 execute unless block ^ ^0.353553390593 ^0.0 #veer:its/seethrough run scoreboard players set $upOld veer.its.sculk_watcher.cry.detect_wall.micro 1
