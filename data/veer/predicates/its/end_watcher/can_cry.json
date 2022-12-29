@@ -2,7 +2,7 @@
     "condition": "alternative",
     "terms": [
         {
-          "condition": "inverted",
+            "condition": "inverted",
             "term": {
                 "condition": "alternative",
                 "terms": [
@@ -33,7 +33,7 @@
                                                 "type": "player",
                                                 "looking_at": {
                                                     "type":"vex",
-                                                    "passenger": {"type":"snowball"}
+                                                    "passenger": {"type":"ender_pearl"}
                                                 }
                                             }
                                         }
@@ -49,7 +49,7 @@
                                         "targeted_entity": {
                                             "targeted_entity": {
                                                 "type": "vex",
-                                                "passenger": {"type": "snowball"}
+                                                "passenger": {"type": "ender_pearl"}
                                             }
                                         }
                                     }

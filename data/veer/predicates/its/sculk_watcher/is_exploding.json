@@ -1,0 +1,25 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "targeted_entity": {
+                    "distance": {
+                        "absolute": {
+                            "max":3
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{ignited:1b}"
+            }
+        }
+    ]
+}

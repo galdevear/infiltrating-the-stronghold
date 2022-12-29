@@ -7,7 +7,7 @@
         "entries": [
           {
             "type": "minecraft:item",
-            "name": "minecraft:ender_pearl",
+            "name": "minecraft:glowstone_dust",
             "functions": [
               {
                 "function": "minecraft:set_count",

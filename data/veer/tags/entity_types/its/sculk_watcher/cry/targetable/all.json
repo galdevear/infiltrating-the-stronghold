@@ -12,6 +12,8 @@
         "#veer:its/sculk_watcher/cry/targetable/2_975",
         "#veer:its/sculk_watcher/cry/targetable/6_8",
         "#veer:its/sculk_watcher/cry/targetable/small",
-        "player"
+        "player",
+        "creeper",
+        "#veer:its/sculk_watcher/cry/passive_aggressive"
         ]
 }
