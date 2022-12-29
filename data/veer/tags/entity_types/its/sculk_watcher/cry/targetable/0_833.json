@@ -1,6 +1,7 @@
 {
     "replace": false,
     "values": [
-      "#veer:its/infested"
+        "falling_block",
+        "tnt"
     ]
 }

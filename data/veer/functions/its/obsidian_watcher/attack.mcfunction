@@ -1,0 +1,1 @@
+execute if predicate veer:its/obsidian_watcher/can_cry run function veer:its/obsidian_watcher/attack-1

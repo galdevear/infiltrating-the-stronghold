@@ -1,0 +1,23 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:fishing_rod_hooked",
+        "conditions": {
+          "entity": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:falling_block",
+                "nbt": "{Tags:[\"veer.its.hooked_shell\"]}"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+        "function": "veer:its/silverfish/hooked_shell"
+    }
+  }
+  

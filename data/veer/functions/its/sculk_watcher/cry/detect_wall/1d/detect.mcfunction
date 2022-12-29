@@ -1,0 +1,1 @@
+execute unless block ~ ~ ~ #veer:its/seethrough run scoreboard players set $seesEntity veer.its.sculk_watcher.cry -1

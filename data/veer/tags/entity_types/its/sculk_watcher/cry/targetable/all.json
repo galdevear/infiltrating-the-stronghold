@@ -1,0 +1,19 @@
+{
+    "replace": false,
+    "values": [
+        "#veer:its/sculk_watcher/cry/targetable/0_595",
+        "#veer:its/sculk_watcher/cry/targetable/0_68",
+        "#veer:its/sculk_watcher/cry/targetable/0_833",
+        "#veer:its/sculk_watcher/cry/targetable/0_85",
+        "#veer:its/sculk_watcher/cry/targetable/1_19",
+        "#veer:its/sculk_watcher/cry/targetable/1_7",
+        "#veer:its/sculk_watcher/cry/targetable/1_7775",
+        "#veer:its/sculk_watcher/cry/targetable/2_295",
+        "#veer:its/sculk_watcher/cry/targetable/2_975",
+        "#veer:its/sculk_watcher/cry/targetable/6_8",
+        "#veer:its/sculk_watcher/cry/targetable/small",
+        "player",
+        "creeper",
+        "#veer:its/sculk_watcher/cry/passive_aggressive"
+        ]
+}

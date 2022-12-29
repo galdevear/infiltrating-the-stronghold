@@ -1,9 +1,0 @@
-{
-    "replace": false,
-    "values": [
-      "cave_air",
-      "void_air",
-      "structure_void",
-      "air"
-    ]
-  }
