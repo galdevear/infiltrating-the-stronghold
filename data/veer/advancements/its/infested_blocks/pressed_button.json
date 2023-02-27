@@ -6,8 +6,7 @@
               "location": {
                 "block": {
                   "blocks": ["stone_button"]
-                },
-                "structure": "stronghold"
+                }
               }
             }
           }

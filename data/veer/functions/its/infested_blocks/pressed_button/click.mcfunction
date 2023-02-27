@@ -1,6 +1,6 @@
 # Theres no way for you to get infested stone with a button on it outside the stronghold so its restricted to the stronghold
 
-advancement revoke @s only veer:its/infested_blocks/pressed_button_in_stronghold
+advancement revoke @s only veer:its/infested_blocks/pressed_button
 
 #declare score_holder $step
 #declare score_holder $maxSteps
