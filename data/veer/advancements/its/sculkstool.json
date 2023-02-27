@@ -1,0 +1,19 @@
+{
+    "parent": "minecraft:adventure/avoid_vibration",
+    "display": {
+        "icon": {
+            "item": "minecraft:sculk_sensor"
+        },
+        "title": "Froufrou",
+        "description": "Release the friendly Sculkstool!",
+        "frame": "task",
+        "announce_to_chat": true,
+        "hidden": false,
+        "show_toast": true
+    },
+    "criteria": {
+        "grant_by_function": {
+            "trigger": "impossible"
+        }
+    }
+}
