@@ -14,6 +14,7 @@
 #declare objective veer.its.hooked_shell
 #declare objective veer.its.sculk_watcher.cry.startleDuration
 #declare objective veer.its.sculk_watcher.cry.detect_wall.micro
+#declare objective veer.its.infested_blocks
 
 scoreboard objectives add veer.its.fix_glowing.glowTimer dummy
 scoreboard objectives add veer.its.silverish.battlecryer.lifeTimer dummy "Silverfish Battlecryer Timer"
@@ -24,3 +25,4 @@ scoreboard objectives add veer.its.sculk_watcher.summon.yOffset dummy "Summon Sc
 scoreboard objectives add veer.its.hooked_shell dummy
 scoreboard objectives add veer.its.sculk_watcher.cry.startleDuration dummy
 scoreboard objectives add veer.its.sculk_watcher.cry.detect_wall.micro dummy
+scoreboard objectives add veer.its.infested_blocks dummy
