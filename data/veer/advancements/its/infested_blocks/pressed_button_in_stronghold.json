@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "button_ceiling": {
+            "trigger": "minecraft:item_used_on_block",
+            "conditions": {
+              "location": {
+                "block": {
+                  "blocks": ["stone_button"]
+                },
+                "structure": "stronghold"
+              }
+            }
+          }
+    },
+    "rewards": {
+        "function": "veer:its/infested_blocks/pressed_button/click"
+    }
+}
