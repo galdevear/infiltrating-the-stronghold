@@ -1,0 +1,25 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:fall_from_height",
+        "conditions": {
+          "player": {
+            "stepping_on": {
+              "block": {
+                "blocks": ["infested_cracked_stone_bricks"]
+              }
+            }
+          },
+          "start_position": {},
+          "distance": {
+            "y": {
+              "min": 0.1
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+        "function": "veer:its/infested_blocks/fall_on_cracked"
+    }
+}
