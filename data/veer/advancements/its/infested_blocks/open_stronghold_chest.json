@@ -1,0 +1,50 @@
+{
+    "criteria": {
+        "stronghold_corridor": {
+            "trigger": "player_generates_container_loot",
+            "conditions": {
+                "loot_table": "chests/stronghold_corridor",
+                "player": [
+                    {
+                        "condition": "random_chance",
+                        "chance": 0.3
+                    }
+                ]
+            }
+        },
+        "stronghold_crossing": {
+            "trigger": "player_generates_container_loot",
+            "conditions": {
+                "loot_table": "chests/stronghold_crossing",
+                "player": [
+                    {
+                        "condition": "random_chance",
+                        "chance": 0.5
+                    }
+                ]
+            }
+        },
+        "stronghold_library": {
+            "trigger": "player_generates_container_loot",
+            "conditions": {
+                "loot_table": "chests/stronghold_library",
+                "player": [
+                    {
+                        "condition": "random_chance",
+                        "chance": 0.8
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "stronghold_corridor",
+            "stronghold_crossing",
+            "stronghold_library"
+        ]
+    ],
+    "rewards": {
+        "function": "veer:its/infested_blocks/open_stronghold_chest/start"
+    }
+}
