@@ -14,3 +14,4 @@ scoreboard objectives remove veer.its.sculk_watcher.summon.yOffset
 scoreboard objectives remove veer.its.hooked_shell
 scoreboard objectives remove veer.its.sculk_watcher.cry.startleDuration
 scoreboard objectives remove veer.its.sculk_watcher.cry.detect_wall.micro
+scoreboard objectives remove veer.its.eye_of_ender

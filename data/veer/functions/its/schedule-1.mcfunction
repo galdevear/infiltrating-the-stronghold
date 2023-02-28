@@ -40,3 +40,6 @@ execute if entity @s[type=snowball,tag=veer.its.sculk_watcher.new] run function 
 
 #> Bind tagged vexes to their location
 execute if entity @s[type=vex,tag=veer.its.util.bind_vex] run function veer:its/util/bind_vex
+
+#> Eye of Ender conversion
+function veer:its/eye_of_ender/convert
