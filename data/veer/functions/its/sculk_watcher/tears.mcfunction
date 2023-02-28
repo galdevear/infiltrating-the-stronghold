@@ -1,0 +1,1 @@
+execute at @s as @a[distance=..30] run function veer:its/sculk_watcher/tears-1

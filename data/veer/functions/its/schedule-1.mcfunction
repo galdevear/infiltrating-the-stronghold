@@ -28,6 +28,9 @@ execute if entity @s[type=ender_pearl,tag=veer.its.obsidian_watcher] run functio
 # End Watcher
 execute if entity @s[type=ender_pearl,tag=veer.its.end_watcher] run function veer:its/end_watcher/attack
 
+#> Sculk Watcher Tears
+execute if entity @s[type=snowball,tag=veer.its.sculk_watcher] run function veer:its/sculk_watcher/tears
+
 #> Removing glowing from 2dproj
 execute if entity @s[type=#veer:its/fix_glowing/passengers, tag=veer.its.fix_glowing.passenger] run function veer:its/fix_glowing/decrement
 
