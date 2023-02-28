@@ -1,0 +1,23 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "enter_block",
+        "conditions": {
+          "block": "stone_pressure_plate",
+          "state": {
+            "powered": "true"
+          }
+        }
+      },
+      "rate_limiter": {
+        "trigger": "location"
+      }
+    },
+    "requirements": [
+      ["requirement"],
+      ["rate_limiter"]
+    ],
+    "rewards": {
+        "function": "veer:its/infested_blocks/stepped_on_pressure_plate"
+    }
+}
