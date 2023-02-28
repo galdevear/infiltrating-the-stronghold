@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        "creeper",
+        "witch",
+        "zombie_villager",
+        "stray",
+        "husk",
+        "squid",
+        "glow_squid",
+        "enderman"
+    ]
+}

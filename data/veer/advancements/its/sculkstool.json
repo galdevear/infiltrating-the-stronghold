@@ -4,8 +4,8 @@
         "icon": {
             "item": "minecraft:sculk_sensor"
         },
-        "title": "Froufrou",
-        "description": "Release the friendly Sculkstool!",
+        "title": "Librarian's Assistant",
+        "description": "Uncover the friendly Sculkstool from its hiding place!",
         "frame": "task",
         "announce_to_chat": true,
         "hidden": false,

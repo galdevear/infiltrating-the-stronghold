@@ -1,1 +1,3 @@
 # execute unless entity @s[advancements={veer:its/infested_blocks/pressed_button_against/button=false,veer:its/infested_blocks/pressed_button_against/infested=false}] run function veer:its/infested_blocks/pressed_button_against/compare_advancements
+
+execute unless entity @s[advancements={veer:its/infested_blocks/place_on_infested/with_infested=false, veer:its/infested_blocks/place_on_infested/without_infested=false}] run function veer:its/infested_blocks/place_on_infested/compare

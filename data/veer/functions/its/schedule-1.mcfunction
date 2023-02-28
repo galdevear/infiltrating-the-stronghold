@@ -17,7 +17,7 @@ execute if entity @s[type=silverfish, tag=veer.its.entity.new] run function veer
 
 #> Watcher Spawning
 # Swap some new spawns with a pair of watchers
-execute if entity @s[type=#veer:its/watcher_pair/replaceable,tag=veer.its.entity.new] run function veer:its/watcher_pair/detect_replaceable
+execute if entity @s[type=#veer:its/watcher_pair/spawn_targets,tag=veer.its.entity.new] run function veer:its/watcher_pair/detect_replaceable
 
 #> Stealth Mechanics
 execute if entity @s[type=snowball,tag=veer.its.sculk_watcher.cry] run function veer:its/sculk_watcher/cry/battlecry

@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+        "#veer:its/watcher_pair/replaceable",
+        "#veer:its/watcher_pair/spawn_with"
+
+    ]
+}

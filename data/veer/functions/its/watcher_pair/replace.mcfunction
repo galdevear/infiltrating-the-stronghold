@@ -24,4 +24,4 @@ tag @s remove veer.its.watcher_pair.replace.true
 execute at @s run function veer:its/sculk_watcher/summon
 
 # Void previous entity
-function veer:its/util/kill_in_void
+execute if entity @s[type=#veer:its/watcher_pair/replaceable] run function veer:its/util/kill_in_void

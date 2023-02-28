@@ -7,7 +7,7 @@
                 "player": [
                     {
                         "condition": "random_chance",
-                        "chance": 0.3
+                        "chance": 0.5
                     }
                 ]
             }
@@ -19,7 +19,7 @@
                 "player": [
                     {
                         "condition": "random_chance",
-                        "chance": 0.5
+                        "chance": 0.8
                     }
                 ]
             }
@@ -31,7 +31,7 @@
                 "player": [
                     {
                         "condition": "random_chance",
-                        "chance": 0.8
+                        "chance": 1
                     }
                 ]
             }
