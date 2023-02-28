@@ -98,7 +98,7 @@
             }
           ],
           "name": "minecraft:milk_bucket",
-          "weight": 5
+          "weight": 10
         },
         {
           "type": "minecraft:item",
