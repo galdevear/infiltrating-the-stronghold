@@ -128,8 +128,8 @@
               "enchantments": { "bane_of_arthropods": {"type": "uniform", "max": 5, "min": 1}}
             },
             {
-              "function": "set_name",
-              "name": "The Bug Swatter"
+              "function": "set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"The Bug Swatter\",\"italic\":false}'}}"
             }
           ]
         },

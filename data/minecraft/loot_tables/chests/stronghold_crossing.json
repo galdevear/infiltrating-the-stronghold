@@ -109,8 +109,8 @@
               "id": "weakness"
             },
             {
-              "function": "set_name",
-              "name": "Obsidian Watcher Tears"
+              "function": "set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Obsidian Watcher Tears\",\"italic\":false}'}}"
             },
             {
               "add": false,
@@ -133,8 +133,8 @@
               "tag": "{CustomPotionEffects:[{Id:24,Amplifier:0b,Duration:3600}],CustomPotionColor:14272831}"
             },
             {
-              "function": "set_name",
-              "name": "End Watcher Tears"
+              "function": "set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"End Watcher Tears\",\"italic\":false}'}}"
             },
             {
               "add": false,
