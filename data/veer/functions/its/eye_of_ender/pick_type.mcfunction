@@ -8,7 +8,7 @@ execute if score $block veer.its.eye_of_ender matches 0 run function veer:its/en
 execute if score $block veer.its.eye_of_ender matches 1 run function veer:its/obsidian_watcher/summon
 execute if score $block veer.its.eye_of_ender matches 2 run function veer:its/sculk_watcher/summon-1
 
-execute as @e[type=#veer:its/watchers] unless entity @s[tag=!veer.its.end_watcher, tag=!veer.its.obsidian_watcher, tag=!veer.its.sculk_watcher] run data modify entity @s PersistenceRequired set value 1b
+execute as @e[type=#veer:its/watchers,limit=2,distance=..1] unless entity @s[tag=!veer.its.end_watcher, tag=!veer.its.obsidian_watcher, tag=!veer.its.sculk_watcher] run data modify entity @s PersistenceRequired set value 1b
 
 execute if score $block veer.its.eye_of_ender matches 1..2 run setblock ~ ~ ~ air replace
 
